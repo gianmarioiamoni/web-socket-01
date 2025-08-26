@@ -1,77 +1,77 @@
 # Real-Time Collaborative Task Board
 
-Un sistema di gestione task collaborativo in tempo reale costruito con lo stack MERN e WebSockets per dimostrare le potenzialità della comunicazione real-time.
+A real-time collaborative task management system built with MERN stack and WebSockets to demonstrate the power of real-time communication.
 
-## 🚀 Caratteristiche Principali
+## 🚀 Key Features
 
 ### ⚡ Real-time Features
 
-- **Aggiornamenti Live**: Sincronizzazione istantanea di tutte le modifiche tra i client
-- **Presenza Utenti**: Visualizzazione degli utenti online con indicatori di presenza
-- **Cursori Live**: Tracking dei movimenti del cursore degli altri utenti
-- **Chat Integrata**: Sistema di chat real-time con typing indicators
-- **Drag & Drop**: Spostamento task con aggiornamenti live per tutti gli utenti
+- **Live Updates**: Instant synchronization of all changes across clients
+- **User Presence**: Online user visualization with presence indicators
+- **Live Cursors**: Real-time cursor tracking of other users
+- **Integrated Chat**: Real-time chat system with typing indicators
+- **Drag & Drop**: Task movement with live updates for all users
 
-### 🛠 Stack Tecnologico
+### 🛠 Tech Stack
 
 **Backend:**
 
 - Node.js + Express.js
-- Socket.io per WebSockets
+- Socket.io for WebSockets
 - MongoDB + Mongoose
 - JWT Authentication
 - TypeScript (strict mode)
-- Winston per logging
-- Joi per validazione
-- bcryptjs per hashing password
+- Winston for logging
+- Joi for validation
+- bcryptjs for password hashing
 
 **Frontend:**
 
 - Next.js 14 (App Router)
 - React 18 + TypeScript
 - Socket.io Client
-- SWR per data fetching e caching
-- Zustand per state management
+- SWR for data fetching and caching
+- Zustand for state management
 - Tailwind CSS + Radix UI
-- DnD Kit per drag & drop
+- DnD Kit for drag & drop
 
 **Database:**
 
-- MongoDB per persistenza dati
-- Schema ottimizzato per performance real-time
-- Indexing strategico per query veloci
+- MongoDB for data persistence
+- Schema optimized for real-time performance
+- Strategic indexing for fast queries
 
-## 📋 Funzionalità
+## 📋 Features
 
-### Gestione Board
+### Board Management
 
-- Creazione e gestione board collaborativi
-- Controllo accessi e permessi membri
-- Aggiornamenti real-time della struttura board
+- Creation and management of collaborative boards
+- Access control and member permissions
+- Real-time board structure updates
 
 ### Task Management
 
-- Creazione, modifica ed eliminazione task
-- Drag & drop tra colonne con sync real-time
-- Assegnazione task e priorità
-- Date di scadenza con notifiche
-- Filtri e ricerca avanzata
+- Create, edit and delete tasks
+- Drag & drop between columns with real-time sync
+- Task assignment and priorities
+- Due dates with notifications
+- Advanced filters and search
 
-### Collaborazione Real-time
+### Real-time Collaboration
 
-- Indicatori presenza utenti online
-- Chat integrata per ogni board
-- Typing indicators durante la scrittura
-- Cursors tracking per awareness spaziale
-- Notifiche push per eventi importanti
+- Online user presence indicators
+- Integrated chat for each board
+- Typing indicators during writing
+- Cursor tracking for spatial awareness
+- Push notifications for important events
 
-### Sistema di Autenticazione
+### Authentication System
 
-- Registrazione e login sicuri
-- JWT tokens con refresh automatico
-- Gestione sessioni WebSocket
+- Secure registration and login
+- JWT tokens with automatic refresh
+- WebSocket session management
 
-## 🏗 Architettura
+## 🏗 Architecture
 
 ### Backend Architecture
 
@@ -110,49 +110,49 @@ client/
 
 ## 🚀 Quick Start
 
-### Prerequisiti
+### Prerequisites
 
 - Node.js 18+
 - MongoDB 6+
-- npm o pnpm
+- npm or pnpm
 
-### Installazione
+### Installation
 
-1. **Clone del repository**
+1. **Clone the repository**
 
 ```bash
 git clone <repository-url>
 cd web-socket-task-board
 ```
 
-2. **Setup Backend**
+2. **Backend Setup**
 
 ```bash
 cd server
 npm install
 cp env.example .env
-# Configura le variabili d'ambiente in .env
+# Configure environment variables in .env
 npm run dev
 ```
 
-3. **Setup Frontend**
+3. **Frontend Setup**
 
 ```bash
 cd ../client
 npm install
 cp env.local.example .env.local
-# Configura le variabili d'ambiente in .env.local
+# Configure environment variables in .env.local
 npm run dev
 ```
 
-4. **Setup Database**
+4. **Database Setup**
 
 ```bash
-# Assicurati che MongoDB sia in esecuzione
-# Il database verrà creato automaticamente al primo avvio
+# Make sure MongoDB is running
+# Database will be created automatically on first startup
 ```
 
-### Configurazione Ambiente
+### Environment Configuration
 
 **Server (.env):**
 
@@ -174,16 +174,16 @@ NEXT_PUBLIC_API_URL=http://localhost:5000/api
 NEXT_PUBLIC_SERVER_URL=http://localhost:5000
 ```
 
-## 📚 Utilizzo
+## 📚 Usage
 
-### Avvio dell'applicazione
+### Starting the application
 
 ```bash
-# Dalla root del progetto
-npm run dev  # Avvia sia backend che frontend
+# From project root
+npm run dev  # Starts both backend and frontend
 ```
 
-### Accesso all'applicazione
+### Accessing the application
 
 - Frontend: http://localhost:3000
 - Backend API: http://localhost:5000/api
@@ -191,27 +191,27 @@ npm run dev  # Avvia sia backend che frontend
 
 ### Demo Workflow
 
-1. Registra un account o fai login
-2. Crea una nuova board
-3. Invita membri al team
-4. Crea colonne (es: To Do, In Progress, Done)
-5. Aggiungi task e assegnali ai membri
-6. Usa drag & drop per spostare i task
-7. Utilizza la chat per comunicare
-8. Osserva gli aggiornamenti real-time!
+1. Register an account or login
+2. Create a new board
+3. Invite team members
+4. Create columns (e.g.: To Do, In Progress, Done)
+5. Add tasks and assign them to members
+6. Use drag & drop to move tasks
+7. Use chat to communicate
+8. Watch real-time updates!
 
-## 🔧 Sviluppo
+## 🔧 Development
 
-### Struttura del Progetto
+### Project Structure
 
-- **Principi SOLID**: Architettura modulare e estensibile
-- **TDD Approach**: Test-driven development con Jest
-- **Clean Code**: Codice leggibile e manutenibile
-- **TypeScript**: Type safety completo con strict mode
-- **Error Handling**: Gestione errori robusta e centralizzata
-- **SRP Implementation**: Single Responsibility Principle applicato
-- **Custom Hooks**: Logic separation per riusabilità
-- **Pure Functions**: Utility functions per business logic
+- **SOLID Principles**: Modular and extensible architecture
+- **TDD Approach**: Test-driven development with Jest
+- **Clean Code**: Readable and maintainable code
+- **TypeScript**: Complete type safety with strict mode
+- **Error Handling**: Robust and centralized error management
+- **SRP Implementation**: Single Responsibility Principle applied
+- **Custom Hooks**: Logic separation for reusability
+- **Pure Functions**: Utility functions for business logic
 
 ### Testing
 
@@ -259,89 +259,89 @@ cd server && npm start
 cd client && npm start
 ```
 
-## 🌟 Caratteristiche Tecniche Avanzate
+## 🌟 Advanced Technical Features
 
 ### Performance Optimization
 
-- **Code Splitting**: Bundle ottimizzati per performance
-- **SWR Caching**: Caching intelligente con revalidation
-- **Lazy Loading**: Caricamento componenti su richiesta
-- **Memory Management**: Cleanup automatico event listeners
-- **Connection Pooling**: Gestione efficiente connessioni DB
-- **TypeScript Optimization**: Strict mode per performance runtime
+- **Code Splitting**: Optimized bundles for performance
+- **SWR Caching**: Intelligent caching with revalidation
+- **Lazy Loading**: On-demand component loading
+- **Memory Management**: Automatic event listener cleanup
+- **Connection Pooling**: Efficient database connection management
+- **TypeScript Optimization**: Strict mode for runtime performance
 
 ### Security Features
 
-- **JWT Authentication**: Tokens sicuri con refresh automatico
-- **Input Validation**: Validazione completa con Joi/Zod
-- **CORS Configuration**: Configurazione sicura cross-origin
-- **Rate Limiting**: Protezione contro abuse API
-- **Password Hashing**: bcryptjs per sicurezza password
-- **Type Safety**: TypeScript per prevenzione errori runtime
+- **JWT Authentication**: Secure tokens with automatic refresh
+- **Input Validation**: Complete validation with Joi/Zod
+- **CORS Configuration**: Secure cross-origin configuration
+- **Rate Limiting**: Protection against API abuse
+- **Password Hashing**: bcryptjs for password security
+- **Type Safety**: TypeScript for runtime error prevention
 
 ### Scalability Features
 
-- **Room-based Architecture**: Isolamento board per performance
-- **Event Debouncing**: Ottimizzazione eventi real-time
-- **Connection Management**: Gestione robusta disconnessioni
-- **Auto-reconnection**: Riconnessione automatica WebSocket
-- **Modular Architecture**: Componenti riutilizzabili e testabili
-- **Circular Dependency Resolution**: Architettura pulita senza dipendenze circolari
+- **Room-based Architecture**: Board isolation for performance
+- **Event Debouncing**: Real-time event optimization
+- **Connection Management**: Robust disconnection handling
+- **Auto-reconnection**: Automatic WebSocket reconnection
+- **Modular Architecture**: Reusable and testable components
+- **Circular Dependency Resolution**: Clean architecture without circular dependencies
 
-## 🎯 Casi d'Uso
+## 🎯 Use Cases
 
-Questo progetto dimostra:
+This project demonstrates:
 
-- **Real-time Synchronization**: Come sincronizzare stato tra client multipli
-- **WebSocket Management**: Gestione avanzata connessioni WebSocket
-- **State Management**: Pattern per state management complesso
-- **Collaborative Features**: Implementazione funzionalità collaborative
-- **Performance Optimization**: Tecniche per app real-time scalabili
+- **Real-time Synchronization**: How to synchronize state across multiple clients
+- **WebSocket Management**: Advanced WebSocket connection management
+- **State Management**: Patterns for complex state management
+- **Collaborative Features**: Implementation of collaborative functionalities
+- **Performance Optimization**: Techniques for scalable real-time apps
 
-## ✅ Miglioramenti Architetturali Implementati
+## ✅ Implemented Architectural Improvements
 
 ### Backend Fixes & Optimizations
 
-- **TypeScript Strict Mode**: Risolti tutti gli errori di compilazione TypeScript
-- **Mongoose Integration**: Fix per compatibilità Document interface con tipi custom
-- **Path Aliases Resolution**: Corretti import paths per migliore maintainability
-- **Circular Dependencies**: Risolte dipendenze circolari nei socket handlers
-- **Error Handling**: Gestione errori centralizzata e type-safe
-- **JWT Integration**: Fix per compatibilità jsonwebtoken con TypeScript
+- **TypeScript Strict Mode**: Resolved all TypeScript compilation errors
+- **Mongoose Integration**: Fixed Document interface compatibility with custom types
+- **Path Aliases Resolution**: Corrected import paths for better maintainability
+- **Circular Dependencies**: Resolved circular dependencies in socket handlers
+- **Error Handling**: Centralized and type-safe error management
+- **JWT Integration**: Fixed jsonwebtoken compatibility with TypeScript
 
 ### Frontend Architecture Improvements
 
-- **SRP Implementation**: Single Responsibility Principle per tutti i componenti
-- **Custom Hooks**: Separazione logic in hooks riutilizzabili
-- **Pure Functions**: Business logic estratta in utility functions
-- **SWR Integration**: Data fetching ottimizzato con caching automatico
-- **Component Modularization**: TaskCard e Page components refactorizzati
-- **Type Safety**: Zero any types, typing completo end-to-end
+- **SRP Implementation**: Single Responsibility Principle for all components
+- **Custom Hooks**: Logic separation into reusable hooks
+- **Pure Functions**: Business logic extracted into utility functions
+- **SWR Integration**: Optimized data fetching with automatic caching
+- **Component Modularization**: TaskCard and Page components refactored
+- **Type Safety**: Zero any types, complete end-to-end typing
 
 ### Code Quality & Standards
 
-- **SOLID Principles**: Applicati in tutta l'architettura
-- **Clean Code**: Nomi descriptivi, funzioni pure, responsabilità singole
-- **TDD Ready**: Struttura preparata per test-driven development
-- **Maintainability**: Codice modulare e facilmente estensibile
+- **SOLID Principles**: Applied throughout the architecture
+- **Clean Code**: Descriptive names, pure functions, single responsibilities
+- **TDD Ready**: Structure prepared for test-driven development
+- **Maintainability**: Modular and easily extensible code
 
-## 📈 Metriche e Monitoring
+## 📈 Metrics and Monitoring
 
-- Health checks automatici
-- Logging strutturato con Winston
-- Monitoring connessioni WebSocket
-- Metriche performance real-time
+- Automatic health checks
+- Structured logging with Winston
+- WebSocket connection monitoring
+- Real-time performance metrics
 - TypeScript compilation checks
-- ESLint/Prettier per code quality
+- ESLint/Prettier for code quality
 
-## 🤝 Contributi
+## 🤝 Contributing
 
-Questo è un progetto dimostrativo, ma contributi e miglioramenti sono benvenuti!
+This is a demonstration project, but contributions and improvements are welcome!
 
-## 📄 Licenza
+## 📄 License
 
-MIT License - Vedi LICENSE file per dettagli.
+MIT License - See LICENSE file for details.
 
 ---
 
-**Costruito con ❤️ per dimostrare il potere dei WebSockets nell'era del real-time web.**
+**Built with ❤️ to demonstrate the power of WebSockets in the real-time web era.**
