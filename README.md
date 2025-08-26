@@ -245,7 +245,7 @@ cd server && npm run dev:watch
 cd client && npm run dev
 ```
 
-### Build per Produzione
+### Production Build 
 
 ```bash
 # Backend
