@@ -1,0 +1,18 @@
+{
+  "typescript.preferences.includePackageJsonAutoImports": "auto",
+  "typescript.suggest.autoImports": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.includeCompletionsForModuleExports": true,
+  "typescript.suggest.includeCompletionsForImportStatements": true,
+  "typescript.workspaceSymbols.scope": "allOpenProjects",
+  "typescript.preferences.useAliasesForRenames": false,
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "eslint.workingDirectories": ["./"],
+  "typescript.tsc.autoDetect": "on",
+  "files.exclude": {
+    "node_modules": true,
+    "dist": true
+  }
+}

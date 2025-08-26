@@ -1,0 +1,1 @@
+{"version":3,"file":"boardHandlers.d.ts","sourceRoot":"","sources":["../../src/socket/boardHandlers.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAE,MAAM,WAAW,CAAC;AAInC,OAAO,KAAK,EACV,oBAAoB,EACpB,oBAAoB,EACpB,mBAAmB,EACpB,MAAM,SAAS,CAAC;AAEjB,eAAO,MAAM,aAAa,GACxB,IAAI,MAAM,CAAC,oBAAoB,EAAE,oBAAoB,CAAC,EACtD,QAAQ,mBAAmB,SAqL5B,CAAC"}

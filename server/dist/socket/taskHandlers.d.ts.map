@@ -1,0 +1,1 @@
+{"version":3,"file":"taskHandlers.d.ts","sourceRoot":"","sources":["../../src/socket/taskHandlers.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAE,MAAM,WAAW,CAAC;AAInC,OAAO,KAAK,EACV,oBAAoB,EACpB,oBAAoB,EACpB,mBAAmB,EAEpB,MAAM,SAAS,CAAC;AAEjB,eAAO,MAAM,YAAY,GACvB,IAAI,MAAM,CAAC,oBAAoB,EAAE,oBAAoB,CAAC,EACtD,QAAQ,mBAAmB,SA+R5B,CAAC"}
