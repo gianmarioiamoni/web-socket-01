@@ -89,7 +89,7 @@ app.use("/api", (req, res, next) => {
 // app.use('/api/boards', boardRoutes);
 // app.use('/api/tasks', taskRoutes);
 
-// Setup Socket.io handlers
+// Setup Socket.io handlers (functional implementation)
 setupSocketHandlers(io);
 
 // Error handling middleware
