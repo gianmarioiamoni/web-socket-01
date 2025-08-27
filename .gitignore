@@ -42,8 +42,7 @@ Thumbs.db
 *.swp
 *.swo
 
-# Client is a separate repository
-client/
+# Client is now part of the main repository
 
 # Build outputs
 dist/
