@@ -16,10 +16,10 @@ export const setupSocketHandlers = (
 ) => {
   // Authentication middleware
   io.use(authenticateSocket);
-  
+
   // Use the functional handlers
   setupFunctionalSocketHandlers(io);
-  
+
   // Handle server-level errors
   io.engine.on("connection_error", (error: Error) => {
     logger.error("Socket.io connection error:", error);
